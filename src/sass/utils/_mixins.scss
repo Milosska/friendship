@@ -1,0 +1,74 @@
+/* ====================== line height calculation =======================*/
+@mixin font-size($size: 18px, $height: 28px) {
+  font-size: $size;
+  line-height: $height / $size;
+}
+
+/* ============================ flex patterns ===========================*/
+@mixin flex-s($y: center) {
+  display: flex;
+  align-items: $y;
+}
+
+@mixin flex-m($x: center, $y: center) {
+  display: flex;
+  justify-content: $x;
+  align-items: $y;
+}
+
+@mixin flex-l($gap, $x: center, $y: center) {
+  display: flex;
+  gap: $gap;
+  justify-content: $x;
+  align-items: $y;
+}
+
+/* ============================= animation patterns =======================*/
+@mixin animation($property) {
+  transition: $property $animation;
+}
+
+@mixin animation-m($property-1, $property-2) {
+  transition: $property-1 $animation, $property-2 $animation;
+}
+
+@mixin animation-l($property-1, $property-2, $property-3) {
+  transition: $property-1 $animation, $property-2 $animation,
+    $property-3 $animation;
+}
+
+/* ============================= position absolute pattern =======================*/
+@mixin position($top-or-bottom, $vertical, $left-or-right, $horizontal) {
+  position: absolute;
+  #{$top-or-bottom}: $vertical;
+  #{$left-or-right}: $horizontal;
+}
+
+/* ============================ pseudoelement pattern ======================*/
+@mixin pseudo($width, $height) {
+  content: '';
+  width: $width;
+  height: $height;
+}
+
+/* =============================== svg pattern ============================*/
+@mixin svg($width, $height) {
+  width: $width;
+  height: $height;
+  fill: currentColor;
+}
+
+/* ============================ social links ==========================*/
+@mixin socials($width, $height) {
+  @include flex-m;
+  width: $width;
+  height: $height;
+  transform: scale(1);
+
+  @include animation(transform);
+
+  &:hover,
+  &:focus {
+    transform: scale(1, 5);
+  }
+}

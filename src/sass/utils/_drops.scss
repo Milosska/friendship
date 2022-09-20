@@ -1,0 +1,52 @@
+body {
+  background-color: map-get($bgcolor, 'main');
+  color: map-get($txtcolor, 'main');
+  font-family: $mainfont;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+}
+
+a {
+  text-decoration: none;
+  color: map-get($txtcolor, 'accent');
+}
+
+button {
+  display: block;
+  margin: 0 auto;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+
+  background-color: map-get($bgcolor, 'accent');
+  color: map-get($txtcolor, 'accent');
+}
+
+address {
+  font-style: normal;
+}
