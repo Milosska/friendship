@@ -16,3 +16,7 @@
   @include position(top, 0, right, 0);
   background-color: red;
 }
+
+.header-container {
+  display: flex;
+}
