@@ -1,3 +1,17 @@
-.fiatures{
-    background-color: aqua;
+.features {
+  padding-top: 40px;
+}
+.features-list {
+  display: flex;
+  gap: 71px;
+  justify-content: center;
+}
+
+.fiatures-item {
+  background-color: rgb(205, 216, 216);
+  display: block;
+  width: 362px;
+}
+.fiatures-title {
+  margin-bottom: 20px;
 }
