@@ -6,6 +6,10 @@
   @extend %container;
   height: 100px;
   background-color: map-get($bgcolor, 'blue-accent');
+
+  @include media(min, desktop) {
+    background-color: teal;
+  }
 }
 .text {
   @include position(top, 0, left, 0);

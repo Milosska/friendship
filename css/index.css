@@ -67,11 +67,17 @@ address {
 /* ============================= position absolute pattern =======================*/
 /* ============================ pseudoelement pattern ======================*/
 /* =============================== svg pattern ============================*/
-/* ============================ social links ==========================*/
+/* ============================ social links pattern ==========================*/
+/* ============================ media pattern ======================*/
 .thumb {
   position: relative;
   height: 100px;
   background-color: #0284d0;
+}
+@media screen and (min-width: 1360px) {
+  .thumb {
+    background-color: teal;
+  }
 }
 
 .text {
