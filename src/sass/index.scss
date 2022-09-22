@@ -1,10 +1,11 @@
-// @import './common';
 // @import './example';
 
+@import './base/common';
 @import './utils/vars';
 @import './utils/drops';
 @import './utils/placeholders';
 @import './utils/mixins';
+@import './components/modal';
 @import './components/header';
 @import './components/footer';
 @import './layout/hero';

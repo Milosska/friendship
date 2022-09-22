@@ -2,6 +2,7 @@
 }
 .thumb {
   position: relative;
+  width: 100px;
 
   @extend %container;
   height: 100px;
@@ -12,6 +13,6 @@
   }
 }
 .text {
-  @include position(top, 0, left, 0);
+  @include position(top, 0, right, 0);
   background-color: red;
 }
